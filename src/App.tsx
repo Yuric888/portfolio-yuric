@@ -1,7 +1,7 @@
-import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
-
+import "./App.scss";
+import { FaBeer } from "react-icons/fa";
+import { Button } from "react-bootstrap";
 function App() {
   return (
     <div className="App">
@@ -9,6 +9,9 @@ function App() {
         <div className="circle">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
+
+        <FaBeer />
+        <Button variant="success">yuric</Button>
       </header>
     </div>
   );
