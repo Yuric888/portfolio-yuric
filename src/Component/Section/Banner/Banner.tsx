@@ -1,6 +1,6 @@
 import "./Banner.scss";
 const Banner = () => {
-  return <div>Banner</div>;
+  return <section className="banner">Banner</section>;
 };
 
 export default Banner;

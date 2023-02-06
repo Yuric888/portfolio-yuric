@@ -5,7 +5,6 @@ import { useContext } from "react";
 
 const Themes = () => {
   const { state, dispatch } = useContext(ThemeContext);
-  console.log("state :>> ", state);
   return (
     <ul className="theme">
       <li

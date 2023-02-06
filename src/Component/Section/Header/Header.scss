@@ -1,3 +1,11 @@
 .shadow-header-moon {
   box-shadow: 0 0.125rem 0.25rem rgba(119, 201, 113, 0.8) !important;
 }
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}

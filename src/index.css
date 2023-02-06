@@ -12,12 +12,12 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
-  font-size: 2em;
   color: red;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -55,4 +55,10 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+li,
+a,
+p {
+  font-size: 1.6em;
 }/*# sourceMappingURL=index.css.map */
