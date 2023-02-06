@@ -6,10 +6,11 @@
     margin-left: 3rem;
     a {
       font-size: 1.6rem;
-      opacity: 0.8;
+      opacity: 0.6;
       font-weight: 500;
       &:hover {
         opacity: 1;
+        color: rgb(216, 216, 76);
       }
     }
   }
@@ -81,7 +82,7 @@
     margin-top: 1rem;
     a {
       font-size: 1.6rem;
-      opacity: 0.8;
+      opacity: 0.6;
       text-transform: uppercase;
       &:hover {
         opacity: 1;
