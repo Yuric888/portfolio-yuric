@@ -35,7 +35,7 @@ const NavLinkHeader = () => {
   };
   return (
     <div className="nav_container">
-      <ul className="d-flex gap-3 text-uppercase nav_links">
+      <ul className="d-flex gap-5 text-uppercase nav_links">
         {navLink.length > 0 &&
           navLink.map((item) => {
             return (
@@ -66,7 +66,7 @@ const NavLinkHeader = () => {
         initial="hidden"
         animate={toggle ? "visible" : "hidden"}
         style={{
-          background: `${state.background === "#fff" ? "#212121" : "#fff"}`,
+          background: `${state.background === "#fff" ? "#212121" : "#c2bfbf"}`,
         }}
       ></motion.div>
       <motion.div
@@ -75,7 +75,7 @@ const NavLinkHeader = () => {
         initial="hidden"
         animate={toggle ? "view" : "hidden"}
         style={{
-          color: `${state.color === "#fff" ? "#000" : "#fff"}`,
+          color: `${state.color === "#fff" ? "#000" : "#c2bfbf"}`,
         }}
       >
         <HiX
@@ -86,7 +86,12 @@ const NavLinkHeader = () => {
         {navLink.length > 0 &&
           navLink.map((item) => {
             return (
-              <li key={item}>
+              <li
+                key={item}
+                onClick={() => {
+                  setToggle(false);
+                }}
+              >
                 <a href={`#${item}`}>{item}</a>
               </li>
             );
