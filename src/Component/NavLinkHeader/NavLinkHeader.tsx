@@ -45,10 +45,18 @@ const NavLinkHeader = () => {
             );
           })}
       </ul>
-      <div className="menu">
+      <div
+        className="menu"
+        style={{
+          background: `${state.background === "#fff" ? "#212121" : "#fff"}`,
+        }}
+      >
         <HiMenuAlt4
           onClick={() => {
             setToggle(true);
+          }}
+          style={{
+            color: `${state.color === "#fff" ? "#000" : "#fff"}`,
           }}
         />
       </div>
@@ -57,14 +65,18 @@ const NavLinkHeader = () => {
         variants={menuVariants}
         initial="hidden"
         animate={toggle ? "visible" : "hidden"}
-        style={state}
+        style={{
+          background: `${state.background === "#fff" ? "#212121" : "#fff"}`,
+        }}
       ></motion.div>
       <motion.div
         className={toggle ? "menuX active" : "menuX"}
         variants={navLinkVariants}
         initial="hidden"
         animate={toggle ? "view" : "hidden"}
-        style={state}
+        style={{
+          color: `${state.color === "#fff" ? "#000" : "#fff"}`,
+        }}
       >
         <HiX
           onClick={() => {

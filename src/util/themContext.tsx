@@ -13,13 +13,13 @@ type ThemeColor = {
 };
 export const themes: ThemeColor = {
   dark: {
-    color: "#FFFFFF",
+    color: "#fff",
     background: "#212121",
     type: "moon",
   },
   light: {
-    color: "#000000",
-    background: "#ffffff",
+    color: "#000",
+    background: "#fff",
     type: "sun",
   },
 };
