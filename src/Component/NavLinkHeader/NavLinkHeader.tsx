@@ -3,14 +3,17 @@ import { navLink } from "../../Data/Data";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import ThemeContext from "../../util/themContext";
+import { useContext } from "react";
 const NavLinkHeader = () => {
   const [toggle, setToggle] = useState(false);
+  const { state } = useContext(ThemeContext);
   const menuVariants = {
     hidden: {
       scale: 0,
     },
     visible: {
-      scale: 50,
+      scale: 80,
       transition: {
         type: "tween",
         duration: 0.5,
@@ -19,18 +22,20 @@ const NavLinkHeader = () => {
   };
   const navLinkVariants = {
     hidden: {
-      display: "none",
+      // visibility: "hidden",
+
       opacity: 0,
     },
-    visible: {
+    view: {
       opacity: 1,
+      // visibility: "visible",
       y: -30,
-      transition: { delay: 0.8 },
+      transition: { delay: 0.6 },
     },
   };
   return (
-    <>
-      <ul className="d-flex gap-3 text-capitalize ">
+    <div className="nav_container">
+      <ul className="d-flex gap-3 text-uppercase nav_links">
         {navLink.length > 0 &&
           navLink.map((item) => {
             return (
@@ -47,8 +52,20 @@ const NavLinkHeader = () => {
           }}
         />
       </div>
-      <motion.div className="closeMenu"></motion.div>
-      <div className="menuX">
+      <motion.div
+        className="closeMenu"
+        variants={menuVariants}
+        initial="hidden"
+        animate={toggle ? "visible" : "hidden"}
+        style={state}
+      ></motion.div>
+      <motion.div
+        className={toggle ? "menuX active" : "menuX"}
+        variants={navLinkVariants}
+        initial="hidden"
+        animate={toggle ? "view" : "hidden"}
+        style={state}
+      >
         <HiX
           onClick={() => {
             setToggle(false);
@@ -62,8 +79,8 @@ const NavLinkHeader = () => {
               </li>
             );
           })}
-      </div>
-    </>
+      </motion.div>
+    </div>
   );
 };
 

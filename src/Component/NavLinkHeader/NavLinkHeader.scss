@@ -1,0 +1,91 @@
+.nav_container {
+  position: relative;
+}
+.nav_links {
+  li {
+    margin-left: 3rem;
+    a {
+      font-size: 1.3rem;
+      opacity: 0.6;
+      font-weight: 500;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    display: none !important;
+  }
+}
+.menu {
+  background: #000;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  svg {
+    width: 70%;
+    height: 70%;
+    color: #fff;
+  }
+  @media screen and (max-width: 800px) {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.closeMenu {
+  background: #000;
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  svg {
+    width: 70%;
+    height: 70%;
+    color: #000;
+  }
+}
+.menuX {
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 100;
+  visibility: hidden !important;
+  &.active {
+    visibility: visible !important;
+  }
+  svg {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  li {
+    margin-top: 1rem;
+    a {
+      opacity: 0.6;
+      text-transform: uppercase;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
