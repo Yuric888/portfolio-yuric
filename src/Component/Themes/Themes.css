@@ -1,0 +1,36 @@
+.theme {
+  display: flex;
+  gap: 1em;
+}
+@media screen and (max-width: 500px) {
+  .theme {
+    gap: 0.5em;
+  }
+}
+.theme li {
+  font-size: 1em;
+}
+.theme li svg {
+  cursor: pointer;
+}
+.theme .sun {
+  color: grey;
+}
+.theme .sun:hover {
+  color: rgb(216, 216, 76);
+}
+.theme .sun.active {
+  color: rgb(216, 216, 76);
+}
+.theme .moon.active {
+  color: white;
+}
+.theme .moon.active:hover {
+  color: white;
+}
+.theme .moon {
+  color: grey;
+}
+.theme .moon:hover {
+  color: #000;
+}/*# sourceMappingURL=Themes.css.map */
