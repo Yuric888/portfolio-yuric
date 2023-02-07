@@ -59,14 +59,14 @@
 }
 #home .profile_text a {
   margin-top: 3rem;
-  padding: 0.35rem 1rem;
+  padding: 0.5rem 1rem;
   text-transform: capitalize;
   border-radius: 1rem;
   font-weight: 500;
 }
 #home .profile_text div {
   position: absolute;
-  padding: 0.2rem 1rem;
+  padding: 0.35rem 1rem;
   border-radius: 25px;
   font-weight: 500;
   cursor: pointer;
