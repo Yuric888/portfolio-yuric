@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "../Component/Error Page/ErrorPage";
 import ThemeContext, { themes } from "../util/themContext";
 import { useReducer } from "react";
-const reducer = (state: any, action: any) => {
+const reducer = (state: any, action: { type: any }) => {
   switch (action.type) {
     case "light":
       return themes.light;
@@ -15,7 +15,7 @@ const reducer = (state: any, action: any) => {
   }
 };
 function init() {
-  return themes.light;
+  return themes.dark;
 }
 
 const App = () => {

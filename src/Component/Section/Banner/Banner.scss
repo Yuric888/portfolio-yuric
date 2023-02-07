@@ -1,4 +1,88 @@
-.banner {
-  height: 100vh;
-  padding-top: 6rem;
+#home {
+  padding: 5rem 0 3rem 0;
+  .profile {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .profile_text {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.5rem;
+    }
+    span {
+      color: #347745;
+      font-weight: 700;
+    }
+    h1 {
+      font-weight: 600;
+    }
+    p {
+      color: inherit;
+    }
+    .job {
+      opacity: 0.6;
+      margin-top: 0.5rem;
+    }
+    .text {
+      margin-top: 2rem;
+      text-align: center;
+      line-height: 1.3;
+      font-size: 3.5rem;
+      font-weight: 600;
+      @media screen and (max-width: 800px) {
+        font-size: 3rem;
+        margin-top: 2rem;
+      }
+      @media screen and (max-width: 524px) {
+        font-size: 2.5rem;
+      }
+    }
+    a {
+      margin-top: 3rem;
+      padding: 0.35rem 1rem;
+      text-transform: capitalize;
+      border-radius: 1rem;
+      font-weight: 500;
+    }
+    div {
+      position: absolute;
+      padding: 0.2rem 1rem;
+      border-radius: 25px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.1);
+        color: #49973a !important;
+      }
+      @media screen and (max-width: 845px) {
+        display: none;
+      }
+    }
+    .web {
+      right: -10rem;
+      top: 5rem;
+    }
+    .ui {
+      top: 2rem;
+      left: -5rem;
+    }
+    .freelancer {
+      bottom: 2rem;
+      left: -6rem;
+    }
+  }
 }
