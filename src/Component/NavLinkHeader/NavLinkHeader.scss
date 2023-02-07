@@ -2,6 +2,9 @@
   position: relative;
 }
 .nav_links {
+  @media screen and (max-width: 1000px) {
+    gap: 1.5rem !important;
+  }
   li {
     a {
       font-size: 1rem;
