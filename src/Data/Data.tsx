@@ -28,7 +28,7 @@ export const bios = [
     id: 2,
     icon: <FaPhoneAlt />,
     key: "Phone",
-    value: "+84797021368",
+    value: "(+84) 797-02-1368",
   },
   {
     id: 3,
@@ -89,6 +89,6 @@ export const contact = [
   {
     id: 3,
     icon: <FaPhoneAlt />,
-    infoText: "+84797021368",
+    infoText: "(+84) 797-02-1368",
   },
 ];

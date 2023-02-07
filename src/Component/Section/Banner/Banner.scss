@@ -1,6 +1,5 @@
 #home {
   // padding: 5rem 0 3rem 0;
-  height: 100vh;
   .profile {
     width: 6rem;
     height: 6rem;
@@ -61,6 +60,7 @@
       text-transform: capitalize;
       border-radius: 1rem;
       font-weight: 500;
+      font-size: 0.85rem;
     }
     div {
       position: absolute;

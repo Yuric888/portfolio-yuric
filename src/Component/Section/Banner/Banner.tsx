@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import portfolio from "../../../assets/another/plant.png";
 import ThemeContext from "../../../util/themContext";
+import { motion } from "framer-motion";
 import "./Banner.scss";
 const Banner = () => {
   const { state } = useContext(ThemeContext);
@@ -26,7 +27,9 @@ const Banner = () => {
           to craft innovative <br />
           web products
         </p>
-        <a
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
           style={{
             background: `${state.background === "#fff" ? "#212121" : "#fff"}`,
             color: `${state.color === "#fff" ? "#000" : "#fff"}`,
@@ -34,7 +37,7 @@ const Banner = () => {
           href="#contact"
         >
           connect with me
-        </a>
+        </motion.a>
         <div
           style={{
             background: `${
