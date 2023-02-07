@@ -7,6 +7,7 @@ import NavLinkHeader from "../../NavLinkHeader/NavLinkHeader";
 
 const Header = () => {
   const { state } = useContext(ThemeContext);
+
   return (
     <header
       className={`w-100 ${state.type === "sun" ? "shadow-sm" : "shadow-moon"}`}
