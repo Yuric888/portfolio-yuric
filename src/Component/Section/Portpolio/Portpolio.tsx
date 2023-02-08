@@ -33,11 +33,21 @@ const Portpolio = () => {
   };
   return (
     <section className="container" id="portfolio">
-      <div className="title">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="title"
+      >
         <span>My Work</span>
         <h1>Awsome Projects</h1>
-      </div>
-      <div className="buttons">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="buttons"
+      >
         {workNavs.map((workNav, idx) => {
           return (
             <Button
@@ -49,8 +59,13 @@ const Portpolio = () => {
             </Button>
           );
         })}
-      </div>
-      <div className="workImages">
+      </motion.div>
+      <motion.div
+        initial={{ x: 0, opacity: 0 }}
+        whileInView={{ x: [-250, 0], opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="workImages"
+      >
         {works.map((work) => {
           return (
             <div className="workImage" key={work.id}>
@@ -81,8 +96,13 @@ const Portpolio = () => {
             </div>
           );
         })}
-      </div>
-      <div className="talk">
+      </motion.div>
+      <motion.div
+        initial={{ x: 0, opacity: 0 }}
+        whileInView={{ x: [250, 0], opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="talk"
+      >
         <div className="talk_left">
           <h3>
             So let's talk about <br />
@@ -94,7 +114,7 @@ const Portpolio = () => {
             <a href="#contact">Contact Me</a>
           </Button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -8,15 +8,30 @@ const About = () => {
   const { state } = useContext(ThemeContext);
   return (
     <section id="about" className="container">
-      <div className="title">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="title"
+      >
         <span>Who Am I?</span>
         <h1>About Me</h1>
-      </div>
+      </motion.div>
       <div className="about_container">
-        <div className="about_left">
+        <motion.div
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [-250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="about_left"
+        >
           <img alt="portfolio-yuric" src={portfolio} />
-        </div>
-        <div className="about_right">
+        </motion.div>
+        <motion.div
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="about_right"
+        >
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
             laborum, vero maxime officia numquam maiores placeat excepturi,
@@ -47,7 +62,7 @@ const About = () => {
           >
             Download Resume
           </motion.a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

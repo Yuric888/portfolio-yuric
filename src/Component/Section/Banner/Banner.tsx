@@ -5,8 +5,21 @@ import { motion } from "framer-motion";
 import "./Banner.scss";
 const Banner = () => {
   const { state } = useContext(ThemeContext);
+  const moveVariants = {
+    animation: {
+      y: [0, -15],
+      transition: {
+        yoyo: Infinity,
+        duration: 2,
+        delay: 1,
+      },
+    },
+  };
   return (
-    <section
+    <motion.section
+      initial={{ y: -15, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 2, delay: 0.5 }}
       id="home"
       className="container d-flex flex-column align-items-center justify-content-center"
     >
@@ -28,6 +41,8 @@ const Banner = () => {
           web products
         </p>
         <motion.a
+          variants={moveVariants}
+          animate="animation"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
           style={{
@@ -78,7 +93,7 @@ const Banner = () => {
           <p>Freelancer</p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

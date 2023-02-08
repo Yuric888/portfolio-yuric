@@ -1,8 +1,15 @@
 import { socialsIcon } from "../../../Data/Data";
 import "./Footer.scss";
+import { motion } from "framer-motion";
 const Footer = () => {
   return (
-    <section className="container" id="footer">
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="container"
+      id="footer"
+    >
       <div className="copyRight">
         <p>
           Copyright&copy;2023 All rights reserved| Made by{" "}
@@ -23,7 +30,7 @@ const Footer = () => {
             })}
         </div>
       </div>
-    </section>
+    </motion.footer>
   );
 };
 

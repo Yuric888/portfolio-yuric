@@ -4,12 +4,15 @@ import "./Header.scss";
 import { useContext } from "react";
 import ThemeContext from "../../../util/themContext";
 import NavLinkHeader from "../../NavLinkHeader/NavLinkHeader";
-
+import { motion } from "framer-motion";
 const Header = () => {
   const { state } = useContext(ThemeContext);
 
   return (
-    <header
+    <motion.header
+      initial={{ y: -25 }}
+      animate={{ y: -5 }}
+      transition={{ duration: 0.5 }}
       className={`w-100 ${state.type === "sun" ? "shadow-sm" : "shadow-moon"}`}
       style={state}
     >
@@ -18,7 +21,7 @@ const Header = () => {
         <NavLinkHeader />
         <Themes />
       </div>
-    </header>
+    </motion.header>
   );
 };
 

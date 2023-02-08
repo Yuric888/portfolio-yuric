@@ -1,4 +1,4 @@
-#footer {
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,7 +6,7 @@
   max-width: 800px;
   margin: 0 auto;
   gap: 2rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem !important;
   .copyRight {
     p {
       font-size: 0.85rem;
