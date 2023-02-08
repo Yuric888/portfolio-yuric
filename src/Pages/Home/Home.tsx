@@ -5,6 +5,7 @@ import "./Home.scss";
 import { useContext } from "react";
 import About from "../../Component/Section/About/About";
 import Skills from "../../Component/Section/Skills/Skills";
+import Portpolio from "../../Component/Section/Portpolio/Portpolio";
 
 function Home() {
   const { state } = useContext(ThemeContext);
@@ -14,6 +15,7 @@ function Home() {
       <Banner />
       <About />
       <Skills />
+      <Portpolio />
     </main>
   );
 }

@@ -13,6 +13,9 @@ import {
 } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
+import work1 from "../assets/another/plant.png";
+import work2 from "../assets/another/eagle.png";
+import work3 from "../assets/another/nature.png";
 export const navLink = ["home", "about", "skills", "portfolio", "contact"];
 
 export const themeIcon = [<GiSun />, <GiEvilMoon />];
@@ -57,19 +60,59 @@ export const experiences = [
     company: "https://medpro.vn/",
   },
 ];
-
-export const workImages = [
+export const finishes = [
   {
     id: 1,
-    img: "work1",
-    name: "project 1",
-    category: "web",
+    number: "6+",
+    itemName: "Years Of Experience",
   },
   {
     id: 2,
-    img: "work2",
+    number: "150+",
+    itemName: "Satisfied Customers",
+  },
+  {
+    id: 3,
+    number: "669+",
+    itemName: "Designed Items",
+  },
+  {
+    id: 4,
+    number: "117+",
+    itemName: "Clients Served",
+  },
+];
+export const workImages: {
+  id: number;
+  img: string;
+  name: string;
+  category: string;
+  github: string;
+  web: string;
+}[] = [
+  {
+    id: 1,
+    img: work1,
+    name: "project 1",
+    category: "web",
+    github: "abc",
+    web: "abc",
+  },
+  {
+    id: 2,
+    img: work2,
     name: "project 2",
     category: "web",
+    github: "abc",
+    web: "abc",
+  },
+  {
+    id: 3,
+    img: work3,
+    name: "project 3",
+    category: "web",
+    github: "abc",
+    web: "abc",
   },
 ];
 

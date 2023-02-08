@@ -6,4 +6,5 @@ header {
   z-index: 10;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+  background-color: transparent !important;
 }/*# sourceMappingURL=Header.css.map */

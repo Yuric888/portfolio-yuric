@@ -37,10 +37,17 @@ const NavLinkHeader = () => {
     <div className="nav_container">
       <ul className="d-flex gap-5 text-uppercase nav_links">
         {navLink.length > 0 &&
-          navLink.map((item) => {
+          navLink.map((item, idx) => {
             return (
               <li key={item}>
-                <a href={`#${item}`}>{item}</a>
+                <a
+                  style={{
+                    color: `${state.color === "#fff" ? "#fff" : "#000"}`,
+                  }}
+                  href={`#${item}`}
+                >
+                  {item}
+                </a>
               </li>
             );
           })}
@@ -92,7 +99,14 @@ const NavLinkHeader = () => {
                   setToggle(false);
                 }}
               >
-                <a href={`#${item}`}>{item}</a>
+                <a
+                  style={{
+                    color: `${state.color === "#fff" ? "#000" : "#fff"}`,
+                  }}
+                  href={`#${item}`}
+                >
+                  {item}
+                </a>
               </li>
             );
           })}

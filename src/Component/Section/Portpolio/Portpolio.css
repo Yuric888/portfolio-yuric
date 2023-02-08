@@ -1,0 +1,90 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.buttons button {
+  text-transform: capitalize !important;
+}
+
+.workImages {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem 1rem;
+}
+@media screen and (max-width: 800px) {
+  .workImages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .workImages {
+    grid-template-columns: 100%;
+  }
+}
+.workImages .workImage {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.workImages .workImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.workImages .workImage .hoverLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(119, 201, 113);
+  gap: 1.5rem;
+}
+.workImages .workImage .hoverLayer a {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.workImages .workImage .hoverLayer a svg {
+  font-size: 1.5rem;
+}
+
+.talk {
+  padding: 2rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.talk_left h3 {
+  font-size: 1.5rem;
+}
+.talk_left h3 span {
+  font-size: 3.5rem;
+  color: #347745;
+  font-weight: 600;
+}
+@media screen and (max-width: 599px) {
+  .talk_left h3 span {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .talk_left h3 span {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=Portpolio.css.map */

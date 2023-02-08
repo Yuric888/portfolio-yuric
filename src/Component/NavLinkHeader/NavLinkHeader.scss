@@ -8,11 +8,9 @@
   li {
     a {
       font-size: 1rem;
-      opacity: 0.6;
       font-weight: 500;
       &:hover {
-        opacity: 1;
-        color: rgb(216, 216, 76);
+        color: rgb(216, 216, 76) !important;
       }
     }
   }
@@ -75,8 +73,8 @@
   }
   svg {
     cursor: pointer;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     position: absolute;
     top: 2rem;
     right: 2rem;
@@ -85,12 +83,10 @@
     margin-top: 1rem;
     a {
       font-size: 1rem;
-      opacity: 0.6;
       font-weight: 500;
       text-transform: uppercase;
       &:hover {
-        opacity: 1;
-        color: rgb(216, 216, 76);
+        color: rgb(216, 216, 76) !important;
       }
     }
   }
