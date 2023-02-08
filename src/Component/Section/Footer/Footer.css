@@ -1,0 +1,42 @@
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 2rem 0;
+  padding: 2rem 3rem;
+}
+#footer .copyRight p {
+  font-size: 0.85rem;
+}
+#footer .copyRight p span {
+  font-weight: 800;
+  color: #347745;
+  font-size: 1rem;
+}
+#footer .followMe {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#footer .followMe h4 {
+  font-size: 0.85rem;
+}
+#footer .followMe .stick {
+  height: 2px;
+  width: 3rem;
+  background-color: #347745;
+}
+#footer .followMe .social_icons {
+  display: flex;
+  gap: 0.5rem;
+}
+#footer .followMe .social_icons a {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+#footer .followMe .social_icons a:hover {
+  opacity: 1;
+}/*# sourceMappingURL=Footer.css.map */

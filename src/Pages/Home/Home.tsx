@@ -7,6 +7,7 @@ import About from "../../Component/Section/About/About";
 import Skills from "../../Component/Section/Skills/Skills";
 import Portpolio from "../../Component/Section/Portpolio/Portpolio";
 import Contact from "../../Component/Section/Contact/Contact";
+import Footer from "../../Component/Section/Footer/Footer";
 
 function Home() {
   const { state } = useContext(ThemeContext);
@@ -18,6 +19,7 @@ function Home() {
       <Skills />
       <Portpolio />
       <Contact />
+      <Footer />
     </main>
   );
 }
