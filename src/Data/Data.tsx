@@ -10,16 +10,26 @@ import {
   FaFigma,
   FaSass,
   FaMapMarkerAlt,
+  FaFacebookSquare,
+  FaInstagram,
 } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 import work1 from "../assets/another/plant.png";
 import work2 from "../assets/another/eagle.png";
 import work3 from "../assets/another/nature.png";
+import { FiGithub } from "react-icons/fi";
 export const navLink = ["home", "about", "skills", "portfolio", "contact"];
 
 export const themeIcon = [<GiSun />, <GiEvilMoon />];
-
+export const socialsIcon: { icon: JSX.Element; url: string }[] = [
+  { icon: <FiGithub />, url: "https://github.com/Yuric888" },
+  {
+    icon: <FaFacebookSquare />,
+    url: "https://www.facebook.com/profile.php?id=100008001377484",
+  },
+  { icon: <FaInstagram />, url: "https://www.instagram.com/yuricdev888" },
+];
 export const bios = [
   {
     id: 1,
@@ -118,7 +128,7 @@ export const workImages: {
 
 export const workNavs = ["All", "Web", "Design"];
 
-export const contact = [
+export const contacts: { id: number; icon: JSX.Element; infoText: string }[] = [
   {
     id: 1,
     icon: <FaMapMarkerAlt />,
