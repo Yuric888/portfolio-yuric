@@ -91,6 +91,9 @@
       &:hover {
         color: rgb(216, 216, 76) !important;
       }
+      &.active {
+        color: rgb(216, 216, 76) !important;
+      }
     }
   }
 }

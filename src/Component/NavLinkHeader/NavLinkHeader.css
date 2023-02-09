@@ -99,4 +99,7 @@
 }
 .menuX li a:hover {
   color: rgb(216, 216, 76) !important;
+}
+.menuX li a.active {
+  color: rgb(216, 216, 76) !important;
 }/*# sourceMappingURL=NavLinkHeader.css.map */
