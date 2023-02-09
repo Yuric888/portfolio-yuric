@@ -5,15 +5,19 @@ import { motion } from "framer-motion";
 import "./Banner.scss";
 const Banner = () => {
   const { state } = useContext(ThemeContext);
-  const moveVariants = {
-    animation: {
-      y: [0, -15],
-      transition: {
-        yoyo: Infinity,
-        duration: 2,
-        delay: 1,
-      },
-    },
+  // const moveVariants = {
+  //   animation: {
+  //     y: [0, -10],
+  //     transition: {
+  //       yoyo: Infinity,
+  //       duration: 2,
+  //       delay: 1,
+  //     },
+  //   },
+  // };
+  const list = {
+    visible: { opacity: 1, transition: { duration: 2, delay: 1 } },
+    hidden: { opacity: 0 },
   };
   return (
     <motion.section
@@ -41,10 +45,15 @@ const Banner = () => {
           web products
         </p>
         <motion.a
-          variants={moveVariants}
-          animate="animation"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
+          animate={{
+            y: [0, -15, 0],
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 1],
+            repeat: Infinity,
+          }}
           style={{
             background: `${state.background === "#fff" ? "#212121" : "#fff"}`,
             color: `${state.color === "#fff" ? "#000" : "#fff"}`,
