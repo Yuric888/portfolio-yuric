@@ -23,13 +23,15 @@ export default function ErrorPage() {
         id="error-page"
         className="vw-100 vh-100 d-flex flex-column align-items-center justify-content-center "
       >
-        <h1>Oops! Page not found</h1>
-        <p>Sorry the route you are looking for does not exist.</p>
-        <p>
+        <h1 className="mb-3">Oops! Page not found</h1>
+        <p className="mb-1">
+          Sorry the route you are looking for does not exist.
+        </p>
+        <p className="mb-2">
           <i>{error.statusText || error.message}</i>
         </p>
         <Link to="/">
-          <Button variant="danger">Home</Button>
+          <Button variant="warning">Home</Button>
         </Link>
       </div>
     );

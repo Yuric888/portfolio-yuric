@@ -23,7 +23,7 @@ const Footer = () => {
           {socialsIcon.length > 0 &&
             socialsIcon.map((icon, idx) => {
               return (
-                <a href={icon.url} key={idx}>
+                <a target="_blank" rel="noreferrer" href={icon.url} key={idx}>
                   {icon.icon}
                 </a>
               );

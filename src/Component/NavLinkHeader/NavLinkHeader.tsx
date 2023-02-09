@@ -5,10 +5,10 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import ThemeContext from "../../util/themContext";
 import { useContext } from "react";
+import { Link } from "react-scroll";
 const NavLinkHeader = () => {
   const [toggle, setToggle] = useState(false);
   const { state } = useContext(ThemeContext);
-  const [active, setActive] = useState<string>("");
   const menuVariants = {
     hidden: {
       scale: 0,
@@ -31,26 +31,27 @@ const NavLinkHeader = () => {
       transition: { delay: 0.6 },
     },
   };
-  const handleClickNavMobile = (item: string) => {
-    setToggle(false);
-    setActive(item);
-  };
+
   return (
     <div className="nav_container">
       <ul className="d-flex gap-5 text-uppercase nav_links">
         {navLink.length > 0 &&
           navLink.map((item, idx) => {
             return (
-              <li key={item} onClick={() => setActive(item)}>
-                <a
+              <li key={item}>
+                <Link
                   style={{
                     color: `${state.color === "#fff" ? "#fff" : "#000"}`,
                   }}
-                  href={`#${item}`}
-                  className={active === item ? "active" : undefined}
+                  to={item}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
                 >
-                  {item === "" ? "Home" : item}
-                </a>
+                  {item === "/" ? "Home" : item}
+                </Link>
               </li>
             );
           })}
@@ -96,16 +97,23 @@ const NavLinkHeader = () => {
         {navLink.length > 0 &&
           navLink.map((item) => {
             return (
-              <li key={item} onClick={() => handleClickNavMobile(item)}>
-                <a
+              <li key={item}>
+                <Link
                   style={{
                     color: `${state.color === "#fff" ? "#000" : "#fff"}`,
                   }}
-                  href={`#${item}`}
-                  className={active === item ? "active" : undefined}
+                  to={item}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => {
+                    setToggle(false);
+                  }}
                 >
                   {item === "" ? "Home" : item}
-                </a>
+                </Link>
               </li>
             );
           })}

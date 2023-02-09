@@ -41,7 +41,12 @@ const Contact = () => {
             {socialsIcon.length > 0 &&
               socialsIcon.map((social, idx) => {
                 return (
-                  <a href={social.url} key={idx}>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={social.url}
+                    key={idx}
+                  >
                     {social.icon}
                   </a>
                 );

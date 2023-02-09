@@ -78,7 +78,7 @@ const Portpolio = () => {
               >
                 <motion.a
                   whileInView={{ scale: [0, 1] }}
-                  whileHover={{ scale: [1, 1, 1] }}
+                  whileHover={{ scale: [1, 1.1] }}
                   transition={{ duration: 0.3 }}
                   href={work.github}
                 >
@@ -86,7 +86,7 @@ const Portpolio = () => {
                 </motion.a>
                 <motion.a
                   whileInView={{ scale: [0, 1] }}
-                  whileHover={{ scale: [1, 1, 1] }}
+                  whileHover={{ scale: [1, 1.1] }}
                   transition={{ duration: 0.3 }}
                   href={work.web}
                 >

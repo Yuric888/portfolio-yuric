@@ -6,6 +6,7 @@
   align-items: center;
   border-radius: 50%;
   background-color: #bee1b7;
+  cursor: pointer;
 }
 .logo img {
   width: 90%;

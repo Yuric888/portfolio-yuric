@@ -1,16 +1,12 @@
 import "./Logo.scss";
 import Image from "../../assets/svg/logo-portfolio.svg";
-import { Link } from "react-router-dom";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 const Logo = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  const scrollClick = () => {
+    scroll.scrollToTop();
   };
   return (
-    <Link to="/" className="logo" onClick={scrollToTop}>
+    <Link to="/" className="logo" onClick={scrollClick}>
       <img src={Image} alt="logo" />
     </Link>
   );
