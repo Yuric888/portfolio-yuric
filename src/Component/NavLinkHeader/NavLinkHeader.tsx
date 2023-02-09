@@ -47,7 +47,7 @@ const NavLinkHeader = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-70}
                   duration={500}
                 >
                   {item === "/" ? "Home" : item}
@@ -106,7 +106,7 @@ const NavLinkHeader = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={-70}
                   duration={500}
                   onClick={() => {
                     setToggle(false);
