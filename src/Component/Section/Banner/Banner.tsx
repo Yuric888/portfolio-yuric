@@ -5,20 +5,7 @@ import { motion } from "framer-motion";
 import "./Banner.scss";
 const Banner = () => {
   const { state } = useContext(ThemeContext);
-  // const moveVariants = {
-  //   animation: {
-  //     y: [0, -10],
-  //     transition: {
-  //       yoyo: Infinity,
-  //       duration: 2,
-  //       delay: 1,
-  //     },
-  //   },
-  // };
-  const list = {
-    visible: { opacity: 1, transition: { duration: 2, delay: 1 } },
-    hidden: { opacity: 0 },
-  };
+
   return (
     <motion.section
       initial={{ y: -15, opacity: 0 }}
@@ -27,11 +14,7 @@ const Banner = () => {
       id="home"
       className="container d-flex flex-column align-items-center justify-content-center"
     >
-      <div
-        className={`profile ${
-          state.type === "sun" ? "shadow-lg" : "shadow-moon"
-        }`}
-      >
+      <div className={"profile shadow-moon"}>
         <img alt="portfolio" src={portfolio} />
       </div>
       <div className="profile_text">

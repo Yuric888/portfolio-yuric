@@ -8,7 +8,7 @@ import { useContext } from "react";
 const NavLinkHeader = () => {
   const [toggle, setToggle] = useState(false);
   const { state } = useContext(ThemeContext);
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState<string>("");
   const menuVariants = {
     hidden: {
       scale: 0,
@@ -31,6 +31,10 @@ const NavLinkHeader = () => {
       transition: { delay: 0.6 },
     },
   };
+  const handleClickNavMobile = (item: string) => {
+    setToggle(false);
+    setActive(item);
+  };
   return (
     <div className="nav_container">
       <ul className="d-flex gap-5 text-uppercase nav_links">
@@ -45,7 +49,7 @@ const NavLinkHeader = () => {
                   href={`#${item}`}
                   className={active === item ? "active" : undefined}
                 >
-                  {item}
+                  {item === "" ? "Home" : item}
                 </a>
               </li>
             );
@@ -92,19 +96,15 @@ const NavLinkHeader = () => {
         {navLink.length > 0 &&
           navLink.map((item) => {
             return (
-              <li
-                key={item}
-                onClick={() => {
-                  setToggle(false);
-                }}
-              >
+              <li key={item} onClick={() => handleClickNavMobile(item)}>
                 <a
                   style={{
                     color: `${state.color === "#fff" ? "#000" : "#fff"}`,
                   }}
                   href={`#${item}`}
+                  className={active === item ? "active" : undefined}
                 >
-                  {item}
+                  {item === "" ? "Home" : item}
                 </a>
               </li>
             );

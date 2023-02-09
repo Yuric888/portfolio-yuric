@@ -28,7 +28,7 @@ const Skills = () => {
           }}
           variant={active === 1 ? "success" : "secondary"}
         >
-          Skills
+          <a href="#skills">Skills</a>
         </Button>
         <Button
           onClick={() => {
@@ -36,7 +36,7 @@ const Skills = () => {
           }}
           variant={active === 2 ? "success" : "secondary"}
         >
-          Experience
+          <a href="#skills">Experience</a>
         </Button>
       </motion.div>
       <motion.div

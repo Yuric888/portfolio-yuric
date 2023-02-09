@@ -19,7 +19,7 @@ import work1 from "../assets/another/plant.png";
 import work2 from "../assets/another/eagle.png";
 import work3 from "../assets/another/nature.png";
 import { FiGithub } from "react-icons/fi";
-export const navLink = ["home", "about", "skills", "portfolio", "contact"];
+export const navLink = ["", "about", "skills", "portfolio", "contact"];
 
 export const themeIcon = [<GiSun />, <GiEvilMoon />];
 export const socialsIcon: { icon: JSX.Element; url: string }[] = [

@@ -55,7 +55,7 @@ const Portpolio = () => {
               key={workNav}
               variant={active === idx ? "success" : "secondary"}
             >
-              {workNav}
+              <a href="#portfolio">{workNav}</a>
             </Button>
           );
         })}
