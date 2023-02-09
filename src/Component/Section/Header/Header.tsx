@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <motion.header
       initial={{ y: -25 }}
-      animate={{ y: -5 }}
+      animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`w-100 ${state.type === "sun" ? "shadow-sm" : "shadow-moon"}`}
       style={state}

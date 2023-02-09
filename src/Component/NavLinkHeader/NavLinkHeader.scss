@@ -12,6 +12,9 @@
       &:hover {
         color: rgb(216, 216, 76) !important;
       }
+      &.active {
+        color: rgb(216, 216, 76) !important;
+      }
     }
   }
   @media screen and (max-width: 800px) {

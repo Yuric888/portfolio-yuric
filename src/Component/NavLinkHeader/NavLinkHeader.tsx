@@ -8,6 +8,7 @@ import { useContext } from "react";
 const NavLinkHeader = () => {
   const [toggle, setToggle] = useState(false);
   const { state } = useContext(ThemeContext);
+  const [active, setActive] = useState("home");
   const menuVariants = {
     hidden: {
       scale: 0,
@@ -22,13 +23,10 @@ const NavLinkHeader = () => {
   };
   const navLinkVariants = {
     hidden: {
-      // visibility: "hidden",
-
       opacity: 0,
     },
     view: {
       opacity: 1,
-      // visibility: "visible",
       y: -30,
       transition: { delay: 0.6 },
     },
@@ -39,12 +37,13 @@ const NavLinkHeader = () => {
         {navLink.length > 0 &&
           navLink.map((item, idx) => {
             return (
-              <li key={item}>
+              <li key={item} onClick={() => setActive(item)}>
                 <a
                   style={{
                     color: `${state.color === "#fff" ? "#fff" : "#000"}`,
                   }}
                   href={`#${item}`}
+                  className={active === item ? "active" : undefined}
                 >
                   {item}
                 </a>
