@@ -22,12 +22,12 @@ const Contact = () => {
           className="contactForm_left"
         >
           <h3>Just Say Hi!</h3>
-          <p className="contactForm_left-text">
+          {/* <p className="contactForm_left-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             minima similique expedita laudantium atque deserunt obcaecati maxime
             qui? Quo nemo beatae consequuntur, excepturi magni labore hic
             consequatur odit natus accusantium.
-          </p>
+          </p> */}
           {contacts.length > 0 &&
             contacts.map((contact) => {
               return (

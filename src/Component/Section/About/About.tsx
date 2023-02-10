@@ -33,10 +33,9 @@ const About = () => {
           className="about_right"
         >
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-            laborum, vero maxime officia numquam maiores placeat excepturi,
-            possimus consequuntur quaerat nobis doloremque soluta perferendis
-            exercitationem sit a. Aut, praesentium voluptatem.
+            Fronted developer, I create web pages with UI / UX user interface, i
+            have years of experience and many clients are happy with the
+            projects carried out.
           </p>
           {bios.map((item) => {
             return (
