@@ -1,5 +1,5 @@
 import "./About.scss";
-import portfolio from "../../../assets/another/plant.png";
+import portfolio from "../../../assets/another/xe-tang.jpg";
 import { bios } from "../../../Data/Data";
 import { useContext } from "react";
 import ThemeContext from "../../../util/themContext";

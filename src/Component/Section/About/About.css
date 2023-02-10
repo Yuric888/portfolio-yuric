@@ -1,3 +1,10 @@
+#about {
+  padding: 5rem 0 5rem;
+}
+
+.about {
+  height: 100vh;
+}
 .about_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -47,7 +54,7 @@
   margin-right: 3rem;
 }
 .about_right a {
-  margin: 0 auto;
+  margin: 2rem auto 0;
   text-transform: capitalize;
   padding: 0.65rem 1rem;
   border-radius: 10px;

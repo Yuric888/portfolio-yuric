@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import portfolio from "../../../assets/another/plant.png";
+import portfolio from "../../../assets/another/xe-tang.jpg";
 import ThemeContext from "../../../util/themContext";
 import { motion } from "framer-motion";
 import "./Banner.scss";
