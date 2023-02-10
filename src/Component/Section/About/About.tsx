@@ -57,8 +57,9 @@ const About = () => {
               background: `${state.background === "#fff" ? "#212121" : "#fff"}`,
               color: `${state.color === "#fff" ? "#000" : "#fff"}`,
             }}
-            href="#"
-            download=""
+            href="Nguyen Thanh Trung.pdf"
+            download="CV Nguyen Thanh Trung.pdf"
+            target="_blank"
           >
             Download Resume
           </motion.a>
