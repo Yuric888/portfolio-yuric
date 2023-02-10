@@ -1,0 +1,31 @@
+.row {
+  width: 100%;
+  border-radius: 10px;
+  input {
+    border: none;
+    outline: none;
+    margin-bottom: 0.5rem;
+    background: #f3f3f3;
+    border-radius: 5px;
+    padding: 0.8rem 1.2rem;
+  }
+  textarea {
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+  }
+}
+.button {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  display: inline-block;
+  margin-top: 1rem;
+  input {
+    padding: 0.65rem 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+}

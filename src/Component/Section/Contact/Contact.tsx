@@ -1,7 +1,7 @@
 import "./Contact.scss";
 import { contacts, socialsIcon } from "../../../Data/Data";
-import { Button } from "react-bootstrap";
 import { motion } from "framer-motion";
+import FormEmail from "../../FormEmail/FormEmail";
 const Contact = () => {
   return (
     <section id="contact" className="container">
@@ -60,22 +60,7 @@ const Contact = () => {
           className="contactForm_right"
         >
           <h3>Get In Touch</h3>
-          <div className="row">
-            <input type="text" placeholder="Please Your Name" />
-          </div>
-          <div className="row">
-            <input type="text" placeholder="Please Your Email" />
-          </div>
-          <div className="row">
-            <textarea placeholder="Please Your Message"></textarea>
-          </div>
-          <motion.div
-            className="button"
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.3 }}
-          >
-            <Button variant="info">Send</Button>
-          </motion.div>
+          <FormEmail />
         </motion.div>
       </div>
     </section>

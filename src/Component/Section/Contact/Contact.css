@@ -58,26 +58,4 @@
 .contactForm_right h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-}
-.contactForm_right .row {
-  width: 100%;
-  border-radius: 10px;
-}
-.contactForm_right .row input {
-  border: none;
-  outline: none;
-  margin-bottom: 0.5rem;
-  background: #f3f3f3;
-  border-radius: 5px;
-  padding: 0.8rem 1.2rem;
-}
-.contactForm_right .row textarea {
-  border: none;
-  outline: none;
-  padding: 0.8rem 1.2rem;
-  border-radius: 5px;
-}
-.contactForm_right .button {
-  display: inline-block;
-  margin-top: 1rem;
 }/*# sourceMappingURL=Contact.css.map */

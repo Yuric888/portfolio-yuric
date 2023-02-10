@@ -1,0 +1,27 @@
+.modal_email {
+  position: fixed;
+  z-index: 20;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  max-width: 20rem;
+  padding: 1rem;
+  background-color: #fff;
+  color: black;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 0;
+  svg {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+  }
+  span {
+    color: #347745;
+    font-weight: 500;
+  }
+}
