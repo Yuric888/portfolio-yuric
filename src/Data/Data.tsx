@@ -15,9 +15,9 @@ import {
 } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
-import work1 from "../assets/another/plant.png";
-import work2 from "../assets/another/eagle.png";
-import work3 from "../assets/another/nature.png";
+import work1 from "../assets/another/work-ltbbeer.png";
+import work2 from "../assets/another/work-portfolio-yuric.png";
+import work3 from "../assets/another/work-yuric-cats.png";
 import { FiGithub } from "react-icons/fi";
 export const navLink = ["home", "about", "skills", "portfolio", "contact"];
 
@@ -103,26 +103,26 @@ export const workImages: {
   {
     id: 1,
     img: work1,
-    name: "project 1",
+    name: "ltb-beer",
     category: "web",
-    github: "abc",
-    web: "abc",
+    github: "https://github.com/Yuric888/LTB-Beer",
+    web: "https://ltb-beer.vercel.app/",
   },
   {
     id: 2,
     img: work2,
-    name: "project 2",
+    name: "portfolio",
     category: "web",
-    github: "abc",
-    web: "abc",
+    github: "https://github.com/Yuric888/portfolio-yuric",
+    web: "https://portfolio-yuric.vercel.app/",
   },
   {
     id: 3,
     img: work3,
     name: "project 3",
     category: "web",
-    github: "abc",
-    web: "abc",
+    github: "https://github.com/Yuric888/Yuric-Cat",
+    web: "https://yuric-cat.vercel.app/shop",
   },
 ];
 

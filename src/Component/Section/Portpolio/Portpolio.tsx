@@ -81,6 +81,7 @@ const Portpolio = () => {
                   whileHover={{ scale: [1, 1.1] }}
                   transition={{ duration: 0.3 }}
                   href={work.github}
+                  target="_blank"
                 >
                   <FiGithub />
                 </motion.a>
@@ -89,6 +90,7 @@ const Portpolio = () => {
                   whileHover={{ scale: [1, 1.1] }}
                   transition={{ duration: 0.3 }}
                   href={work.web}
+                  target="_blank"
                 >
                   <FiEye />
                 </motion.a>
