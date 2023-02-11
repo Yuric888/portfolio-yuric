@@ -56,7 +56,7 @@ const About = () => {
               background: `${state.background === "#fff" ? "#212121" : "#fff"}`,
               color: `${state.color === "#fff" ? "#000" : "#fff"}`,
             }}
-            href="Nguyen Thanh Trung.pdf"
+            href="CV_Nguyễn Thành Trung.pdf"
             download="CV Nguyen Thanh Trung.pdf"
             target="_blank"
           >
