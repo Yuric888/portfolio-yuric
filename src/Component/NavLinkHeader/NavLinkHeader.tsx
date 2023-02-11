@@ -47,7 +47,7 @@ const NavLinkHeader = () => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-150}
+                  offset={-100}
                   duration={500}
                 >
                   {item === "/" ? "Home" : item}
