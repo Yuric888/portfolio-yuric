@@ -122,7 +122,7 @@ export const workImages: {
     name: "project 3",
     category: "web",
     github: "https://github.com/Yuric888/Yuric-Cat",
-    web: "https://yuric-cat.vercel.app/shop",
+    web: "https://yuric-cat.vercel.app",
   },
 ];
 
