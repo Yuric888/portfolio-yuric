@@ -19,6 +19,7 @@ import work1 from "../assets/another/work-ltbbeer.png";
 import work2 from "../assets/another/work-portfolio-yuric.png";
 import work3 from "../assets/another/work-yuric-cats.png";
 import work4 from "../assets/another/work-yuric-shopping-cart.png";
+import work5 from "../assets/another/work-yuric-form.png";
 import { FiGithub } from "react-icons/fi";
 export const navLink = ["home", "about", "skills", "portfolio", "contact"];
 
@@ -132,6 +133,14 @@ export const workImages: {
     category: "web",
     github: "https://github.com/Yuric888/yuric-shopping-cart-1",
     web: "https://yuric-default-fe-guu1-git-yuric-yuric888.vercel.app",
+  },
+  {
+    id: 5,
+    img: work5,
+    name: "project 5",
+    category: "web",
+    github: "https://github.com/Yuric888/yuric-form",
+    web: "https://yuric-form.vercel.app/",
   },
 ];
 
